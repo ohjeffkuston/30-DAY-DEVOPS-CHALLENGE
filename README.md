@@ -33,13 +33,14 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
 ## Project Structure
 weather-dashboard/
 ├── src/
-│   ├── init.py
+│   ├── __init__.py
 │   └── weather_dashboard.py
 ├── tests/
 ├── data/
 ├── .env
 ├── .gitignore
 └── requirements.txt
+
 Copy
 ## Setup Instructions
 1. Clone the repository:
