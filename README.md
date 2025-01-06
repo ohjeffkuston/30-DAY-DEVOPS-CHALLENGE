@@ -30,16 +30,17 @@ This project is a Weather Data Collection System that demonstrates core DevOps p
   - python-dotenv
   - requests
 
+```markdown
 ## Project Structure
 weather-dashboard/
-├── src/
-│   ├── __init__.py
-│   └── weather_dashboard.py
-├── tests/
-├── data/
-├── .env
-├── .gitignore
-└── requirements.txt
+  src/
+    __init__.py
+    weather_dashboard.py
+  tests/
+  data/
+  .env
+  .gitignore
+  requirements.txt
 
 ## Setup Instructions
 1. Clone the repository:
