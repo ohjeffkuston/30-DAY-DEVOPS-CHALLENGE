@@ -1,11 +1,10 @@
+# 30 Days DevOps Challenge - Weather Dashboard
 
-# **30 Days DevOps Challenge - Weather Dashboard**
-
-### **Day 1: Building a Weather Data Collection System with AWS S3 and OpenWeather API**
+### Day 1: Building a Weather Data Collection System with AWS S3 and OpenWeather API
 
 ---
 
-## **📌 Project Overview**
+## 📌 Project Overview
 This project focuses on creating a Weather Data Collection System to demonstrate core DevOps principles, including:
 - **API Integration**: Fetch real-time weather data using the OpenWeather API.
 - **Cloud Storage**: Store weather data securely in AWS S3.
@@ -17,7 +16,7 @@ This project focuses on creating a Weather Data Collection System to demonstrate
 
 ---
 
-## **🌟 Features**
+## 🌟 Features
 - Fetches real-time weather data for multiple cities.
 - Displays:
   - Temperature (°F)
@@ -28,7 +27,7 @@ This project focuses on creating a Weather Data Collection System to demonstrate
 
 ---
 
-## **⚙️ Technical Architecture**
+## ⚙️ Technical Architecture
 - **Programming Language**: Python 3.x
 - **Cloud Provider**: AWS (S3)
 - **External API**: OpenWeather API
@@ -39,8 +38,8 @@ This project focuses on creating a Weather Data Collection System to demonstrate
 
 ---
 
-## **📂 Project Structure**
-\`\`\`plaintext
+## 📂 Project Structure
+```plaintext
 weather-dashboard/
   ├── src/
   │     ├── __init__.py
@@ -50,45 +49,45 @@ weather-dashboard/
   ├── .env
   ├── .gitignore
   ├── requirements.txt
-\`\`\`
+```
 
 ---
 
-## **🚀 Setup Instructions**
+## 🚀 Setup Instructions
 
 ### 1. Clone the Repository
-\`\`\`bash
+```bash
 git clone https://github.com/ohjeffkuston/30-DAY-DEVOPS-CHALLENGE.git
 cd 30-DAY-DEVOPS-CHALLENGE
-\`\`\`
+```
 
 ### 2. Install Dependencies
-\`\`\`bash
+```bash
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 3. Configure Environment Variables
 Create a `.env` file in the project root directory and add the following:
-\`\`\`plaintext
+```plaintext
 OPENWEATHER_API_KEY=your_api_key
 AWS_BUCKET_NAME=your_bucket_name
-\`\`\`
+```
 
 ### 4. Configure AWS Credentials
 Set up AWS credentials using the AWS CLI:
-\`\`\`bash
+```bash
 aws configure
-\`\`\`
+```
 
 ### 5. Run the Application
 Execute the program:
-\`\`\`bash
+```bash
 python src/weather_dashboard.py
-\`\`\`
+```
 
 ---
 
-## **🎓 What I Learned**
+## 🎓 What I Learned
 - **AWS S3**: Bucket creation and management.
 - **Environment Variables**: Secure handling of API keys.
 - **Python**: Best practices for API integration.
@@ -98,7 +97,7 @@ python src/weather_dashboard.py
 
 ---
 
-## **🚧 Future Enhancements**
+## 🚧 Future Enhancements
 - Add weather forecasting capabilities.
 - Implement data visualization for enhanced insights.
 - Expand support for additional cities.
@@ -107,5 +106,5 @@ python src/weather_dashboard.py
 
 ---
 
-## **📜 License**
+## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).
