@@ -1,78 +1,111 @@
-# 30 Days DevOps Challenge - Weather Dashboard
 
-Day 1: Building a weather data collection system using AWS S3 and OpenWeather API
+# **30 Days DevOps Challenge - Weather Dashboard**
 
-# Weather Data Collection System - DevOps Day 1 Challenge
+### **Day 1: Building a Weather Data Collection System with AWS S3 and OpenWeather API**
 
-## Project Overview
-This project is a Weather Data Collection System that demonstrates core DevOps principles by combining:
-- External API Integration (OpenWeather API)
-- Cloud Storage (AWS S3)
-- Infrastructure as Code
-- Version Control (Git)
-- Python Development
-- Error Handling
-- Environment Management
+---
 
-## Features
-- Fetches real-time weather data for multiple cities
-- Displays temperature (°F), humidity, and weather conditions
-- Automatically stores weather data in AWS S3
-- Supports multiple cities tracking
-- Timestamps all data for historical tracking
+## **📌 Project Overview**
+This project focuses on creating a Weather Data Collection System to demonstrate core DevOps principles, including:
+- **API Integration**: Fetch real-time weather data using the OpenWeather API.
+- **Cloud Storage**: Store weather data securely in AWS S3.
+- **Infrastructure as Code**: Streamline deployment processes.
+- **Version Control**: Use Git for efficient change management.
+- **Python Development**: Write clean and modular code.
+- **Error Handling**: Build a robust system to handle failures.
+- **Environment Management**: Securely manage sensitive credentials.
 
-## Technical Architecture
-- **Language:** Python 3.x
-- **Cloud Provider:** AWS (S3)
-- **External API:** OpenWeather API
-- **Dependencies:** 
-  - boto3 (AWS SDK)
-  - python-dotenv
-  - requests
+---
 
-```markdown
-## Project Structure
+## **🌟 Features**
+- Fetches real-time weather data for multiple cities.
+- Displays:
+  - Temperature (°F)
+  - Humidity
+  - Weather conditions
+- Stores weather data automatically in AWS S3 with timestamps.
+- Supports historical data tracking for multiple cities.
+
+---
+
+## **⚙️ Technical Architecture**
+- **Programming Language**: Python 3.x
+- **Cloud Provider**: AWS (S3)
+- **External API**: OpenWeather API
+- **Key Dependencies**:
+  - `boto3` (AWS SDK for Python)
+  - `python-dotenv` (Environment variable management)
+  - `requests` (HTTP requests)
+
+---
+
+## **📂 Project Structure**
+\`\`\`plaintext
 weather-dashboard/
-  src/
-    __init__.py
-    weather_dashboard.py
-  tests/
-  data/
-  .env
-  .gitignore
-  requirements.txt
+  ├── src/
+  │     ├── __init__.py
+  │     └── weather_dashboard.py
+  ├── tests/
+  ├── data/
+  ├── .env
+  ├── .gitignore
+  ├── requirements.txt
+\`\`\`
 
-## Setup Instructions
-1. Clone the repository:
---bash
-git clone https://github.com/ShaeInTheCloud/30days-weather-dashboard.git
+---
 
-3. Install dependencies:
-bashCopypip install -r requirements.txt
+## **🚀 Setup Instructions**
 
-4. Configure environment variables (.env):
-CopyOPENWEATHER_API_KEY=your_api_key
+### 1. Clone the Repository
+\`\`\`bash
+git clone https://github.com/ohjeffkuston/30-DAY-DEVOPS-CHALLENGE.git
+cd 30-DAY-DEVOPS-CHALLENGE
+\`\`\`
+
+### 2. Install Dependencies
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+### 3. Configure Environment Variables
+Create a `.env` file in the project root directory and add the following:
+\`\`\`plaintext
+OPENWEATHER_API_KEY=your_api_key
 AWS_BUCKET_NAME=your_bucket_name
+\`\`\`
 
-4.Configure AWS credentials:
-bashCopyaws configure
+### 4. Configure AWS Credentials
+Set up AWS credentials using the AWS CLI:
+\`\`\`bash
+aws configure
+\`\`\`
 
-5. Run the application:
+### 5. Run the Application
+Execute the program:
+\`\`\`bash
 python src/weather_dashboard.py
+\`\`\`
 
-What I Learned
+---
 
-AWS S3 bucket creation and management
-Environment variable management for secure API keys
-Python best practices for API integration
-Git workflow for project development
-Error handling in distributed systems
-Cloud resource management
+## **🎓 What I Learned**
+- **AWS S3**: Bucket creation and management.
+- **Environment Variables**: Secure handling of API keys.
+- **Python**: Best practices for API integration.
+- **Git**: Managing workflows for collaborative development.
+- **Error Handling**: Building resilience in distributed systems.
+- **Cloud Management**: Resource automation and monitoring.
 
-Future Enhancements
+---
 
-Add weather forecasting
-Implement data visualization
-Add more cities
-Create automated testing
-Set up CI/CD pipeline
+## **🚧 Future Enhancements**
+- Add weather forecasting capabilities.
+- Implement data visualization for enhanced insights.
+- Expand support for additional cities.
+- Create automated tests for improved reliability.
+- Set up a CI/CD pipeline for seamless integration and deployment.
+
+---
+
+## **📜 License**
+This project is open-source and available under the [MIT License](LICENSE).
