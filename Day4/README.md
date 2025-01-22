@@ -68,8 +68,7 @@ docker build --platform linux/amd64 -t sports-api .
 
 docker tag sports-api:latest <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 
-docker push
-<AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
+docker push <AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/sports-api:sports-api-latest
 ```
 
 ### **Set Up ECS Cluster with Fargate**
@@ -137,11 +136,3 @@ curl https://<api-gateway-id>.execute-api.us-east-1.amazonaws.com/prod/sports
 ### **What We Learned**
 Setting up a scalable, containerized application with ECS
 Creating public APIs using API Gateway.
-
-### **Future Enhancements**
-Add caching for frequent API requests using Amazon ElastiCache
-Add DynamoDB to store user-specific queries and preferences
-Secure the API Gateway using an API key or IAM-based authentication
-Implement CI/CD for automating container deployments
-
-
