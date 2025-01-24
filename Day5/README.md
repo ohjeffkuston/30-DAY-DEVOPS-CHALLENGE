@@ -70,8 +70,6 @@ src/
 ├── requirements.txt          # Python dependencies
 ├── run_all.py        # Orchestrates the execution of all scripts
 ├── .env            # Environment variables file
-├── .gitignore      # Specifies files to ignore in version control
-
 ```
 
 # START HERE - Local
