@@ -76,7 +76,7 @@ src/
 ## **Step 1: Clone The Repo**
 ```bash
 git clone https://github.com/ohjeffkuston/30-DAY-DEVOPS-CHALLENGE.git
-cd DAy5/src
+cd Day5/src
 ```
 ## **Step 2: Add API Key to AWS Secrets Manager**
 ```bash
