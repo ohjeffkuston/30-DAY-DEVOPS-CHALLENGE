@@ -3,3 +3,8 @@ __pycache__/
 *.zip
 venv/
 .DS_Store
+*.tfvars
+*.tfvars.json
+*.tfstate
+*.tfstate.backup
+*.tfstate.backup.*
