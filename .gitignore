@@ -22,3 +22,6 @@ override.tf.json
 .terraformrc
 terraform.rc
 .terraform.tfstate.lock.info
+
+# Terraform provider files
+**/.terraform/providers/**
