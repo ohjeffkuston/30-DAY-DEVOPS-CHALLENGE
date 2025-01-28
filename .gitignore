@@ -3,9 +3,22 @@ __pycache__/
 *.zip
 venv/
 .DS_Store
+
+# Terraform
+**/.terraform/*
+.terraform
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
 *.tfvars
 *.tfvars.json
-*.tfstate
-*.tfstate.backup
-*.tfstate.backup.*
-Day6/terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/5.84.0/darwin_arm64/terraform-provider-aws_v5.84.0_x5
+crash.log
+crash.*.log
+*.tfplan
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+.terraform.tfstate.lock.info
