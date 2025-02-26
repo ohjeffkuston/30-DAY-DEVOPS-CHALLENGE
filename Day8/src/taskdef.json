@@ -1,0 +1,43 @@
+{
+  "family": "sports-backup-task",
+  "networkMode": "awsvpc",
+  "executionRoleArn": "arn:aws:iam::102492884144:role/ecsTaskExecutionRole",
+  "taskRoleArn": "",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "cpu": "512",
+  "memory": "1024",
+  "containerDefinitions": [
+    {
+      "name": "sports-backup-container",
+      "image": "102492884144.dkr.ecr.us-east-1.amazonaws.com/sports-backup:latest",
+      "essential": true,
+      "environment": [
+        { "name": "API_URL", "value": "https://sport-highlights-api.p.rapidapi.com/basketball/highlights" },
+        { "name": "RAPIDAPI_HOST", "value": "sport-highlights-api.p.rapidapi.com" },
+        { "name": "RAPIDAPI_KEY", "value": "165c89d011msha081dd95306d9aap1bacd0jsn7025dcfa187f" },
+        { "name": "LEAGUE_NAME", "value": "NCAA" },
+        { "name": "LIMIT", "value": "10" },
+        { "name": "S3_BUCKET_NAME", "value": "jeffynewhighlight-final" },
+        { "name": "AWS_REGION", "value": "us-east-1" },
+        { "name": "DYNAMODB_TABLE", "value": "SportsHighlights" },
+        { "name": "MEDIACONVERT_ENDPOINT", "value": "https://vasjpylpa.mediaconvert.us-east-1.amazonaws.com" },
+        { "name": "MEDIACONVERT_ROLE_ARN", "value": "arn:aws:iam::102492884144:role/HighlightProcessorRole" },
+        { "name": "INPUT_KEY", "value": "highlights/basketball_highlights.json" },
+        { "name": "OUTPUT_KEY_PREFIX", "value": "" },
+        { "name": "RETRY_COUNT", "value": "3" },
+        { "name": "RETRY_DELAY", "value": "30" },
+        { "name": "WAIT_TIME_BETWEEN_SCRIPTS", "value": "60" }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/sports-api-task",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      }
+    }
+  ]
+}

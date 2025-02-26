@@ -1,0 +1,23 @@
+[
+  {
+    "Id": "1",
+    "Arn": "arn:aws:ecs:us-east-1:102492884144:cluster/sports-backup-cluster",
+    "RoleArn": "arn:aws:iam::102492884144:role/ecsEventsRole",
+    "EcsParameters": {
+      "TaskDefinitionArn": "arn:aws:ecs:us-east-1:102492884144:task-definition/sports-backup-task:1",
+      "TaskCount": 1,
+      "LaunchType": "FARGATE",
+      "NetworkConfiguration": {
+        "awsvpcConfiguration": {
+          "Subnets": [
+            "subnet-0b0d1fc6e0c5f1249"
+          ],
+          "SecurityGroups": [
+            "sg-06addeea5b77fdb15"
+          ],
+          "AssignPublicIp": "ENABLED"
+        }
+      }
+    }
+  }
+]
